@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --bottom-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    --lightpurple: rgb(128, 128, 255);
+    --darkpurple: rgb(51, 10, 201);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: var(--lightpurple);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+form {
+    font-family: 'Rubik', sans-serif;
+    max-width: 400px;
+    margin: 50px auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid rgb(48, 15, 166);
+    border-radius: 5px;
+    background-color: var(--darkpurple);
+}
+
+form>h2 {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.referral {
+    margin: 20px;
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* To include padding and border in element's total width and height */
+}
+
+input[type="submit"] {
+    width: 100px;
+    background-color: var(--darkpurple);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    /* To include padding and border in element's total width and height */
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.strength-meter {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+.strength-bar {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.weak {
+    background-color: #ff8080;
+}
+
+.medium {
+    background-color: #ffcc66;
+}
+
+.strong {
+    background-color: #66cc66;
+}
+
+.dealtimer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+    border-radius: 5px;
+    border: 2px solid rgb(48, 15, 166);
+    background-color: var(--darkpurple);
+    margin-top: 10px;
+}
+
+.dealtimer>p {
+    font-family: 'Rubik Mono One', sans-serif;
+    margin: 20px;
+}

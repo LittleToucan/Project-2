@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ Page</title>
+    <link rel="stylesheet" href="faqPage.css">
+    </link>
+</head>
+
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+    </header>
+    <div class="container">
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">What is Editor Repo?</div>
+            <div class="answer">
+                Editor Repo is a hub for all your video editing needs.<br>
+                You can find images, music, sound effects, and watch helpful tutorials.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">Can we request things to be added to the resource
+                libraries?</div>
+            <div class="answer">
+                Yes you can!
+                make sure you send the request to testemail@email.com
+                and we will try to make it happen.
+                Note* if for whatever reason we cannot add this resource you will
+                be notified by support.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">Are your resources free to use?</div>
+            <div class="answer">
+                Yes they are.<br>
+                However we do offer premium libraries from partnered publishers
+                whom have given us permission to use their property.
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="question" onclick="toggleAnswer(this)">How are you funded?</div>
+            <div class="answer">
+                We rely on 3 primary sources of income
+                Donations,Advertisements,Premium memberships.
+            </div>
+        </div>
+    </div>
+
+    <div class="bot">
+        <h1>I am a chat assistant ask me anything!</h1>
+        <div id="chat"></div>
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="faqPage.js"></script>
+</body>
+
+</html>

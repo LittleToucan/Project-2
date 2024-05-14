@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signupPage.css">
+</head>
+
+<body>
+    <form action="/signup" method="post">
+        <h2>Sign Up</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" onkeyup="checkPasswordStrength(this.value)">
+        <div class="strength-meter">
+            <!--both id and class is used to as a convenient way to change class value without removing and adding classes-->
+            <div class="strength-bar" id="strength-bar"></div>
+        </div>
+
+        <input type="submit" value="Sign Up">
+        <!--HELLO change path back when finished-->
+        <a href="loginPage.html" class=referral>Already a member? Click here.</a>
+    </form>
+
+    <div class="dealtimer">
+        <p>Sign up now to get 50% off of a premium membership.
+            membership includes access to all premium resources.
+        </p>
+        <h2>Countdown Timer</h2>
+        <p id="timer"></p>
+    </div>
+    <script src="signupPage.js"></script>
+</body>
+
+</html>
